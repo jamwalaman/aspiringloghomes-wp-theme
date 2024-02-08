@@ -6,6 +6,11 @@
             "name": "asl-home",
 			"postTypes": ["page"],
             "title": "ASL Home Page"
+        },
+        {
+            "name": "asl-featured-img",
+            "postTypes": ["page"],
+            "title": "ASL Featured Img"
         }
     ]
 }
