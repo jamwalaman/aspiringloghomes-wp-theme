@@ -15,6 +15,25 @@
         }
     ],
     "settings": {
+        "color": {
+            "palette": [
+                {
+                    "color": "#545DA9",
+                    "name": "ASL Purple",
+                    "slug": "asl-purple"
+                },
+                {
+                    "color": "#ffffff",
+                    "name": "White",
+                    "slug": "white"
+                },
+                {
+                    "color": "#000000",
+                    "name": "Black",
+                    "slug": "black"
+                }
+            ]
+        },
         "typography": {
             "fontFamilies": [
                 {
