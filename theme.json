@@ -9,9 +9,9 @@
             "title": "ASL Home Page"
         },
         {
-            "name": "asl-featured-img",
+            "name": "asl-simple-page",
             "postTypes": ["page"],
-            "title": "ASL Featured Img"
+            "title": "ASL Simple"
         }
     ],
     "settings": {
