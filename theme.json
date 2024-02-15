@@ -52,6 +52,19 @@
         }
     },
     "styles": {
+        "blocks": {
+            "core/navigation": {
+                "elements": {
+                    "link": {
+                        ":hover": {
+                            "typography": {
+                                "textDecoration": "none"
+                            }
+                        }
+                    }
+                }
+            }
+        },
         "elements": {
             "heading": {
                 "typography": {
