@@ -1,11 +1,10 @@
 {
-
     "$schema": "https://schemas.wp.org/trunk/theme.json",
     "version": 2,
-    "customTemplates" :[
+    "customTemplates": [
         {
             "name": "asl-home",
-			"postTypes": ["page"],
+            "postTypes": ["page"],
             "title": "ASL Home Page"
         },
         {
@@ -33,6 +32,9 @@
                     "slug": "black"
                 }
             ]
+        },
+        "layout": {
+            "contentSize": "920px"
         },
         "typography": {
             "fontFamilies": [
@@ -68,7 +70,7 @@
         "elements": {
             "heading": {
                 "typography": {
-					"fontFamily": "var(--wp--preset--font-family--primary)",
+                    "fontFamily": "var(--wp--preset--font-family--primary)",
                     "fontWeight": "700"
                 }
             }
@@ -77,5 +79,4 @@
             "fontFamily": "var(--wp--preset--font-family--primary)"
         }
     }
-
 }
