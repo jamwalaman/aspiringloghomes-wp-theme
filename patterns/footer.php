@@ -1,7 +1,7 @@
 <?php
 /**
- * Title: Footer for ASL
- * Slug: asl/footer
+ * Title: Footer for ALH
+ * Slug: alh/footer
  * Categories: footer
  */
 ?>
@@ -15,7 +15,7 @@
 <!-- /wp:paragraph --></div>
 <!-- /wp:column -->
 
-<!-- wp:column {"verticalAlignment":"center","width":"60%","className":"aslnav"} -->
+<!-- wp:column {"verticalAlignment":"center","width":"60%","className":"alhnav"} -->
 <div class="wp-block-column is-vertically-aligned-center" style="flex-basis:60%">
     <!-- wp:list -->
     <?php
