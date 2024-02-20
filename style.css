@@ -9,6 +9,19 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: aspiringloghomes
 */
 
-a.wp-block-navigation-item__content:hover {
+header a.wp-block-navigation-item__content:hover {
     color: #545DA9 !important;
+}
+
+.aslnav {
+    display: flex;
+    justify-content: center;
+}
+
+.aslnav ul {
+    list-style: none;
+}
+
+.aslnav ul a {
+    text-decoration: none;
 }
