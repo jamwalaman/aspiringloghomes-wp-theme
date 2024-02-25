@@ -13,6 +13,14 @@ header a.wp-block-navigation-item__content:hover {
     color: #545DA9 !important;
 }
 
+ul#menu-header-nav li ul {
+    display: none;
+}
+
+.show {
+    display: block !important;
+}
+
 .alhnav {
     display: flex;
     justify-content: center;

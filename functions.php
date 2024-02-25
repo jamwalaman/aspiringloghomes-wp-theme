@@ -4,14 +4,18 @@ add_action('wp_enqueue_scripts', 'alh_enqueue_styles');
 
 function alh_enqueue_styles() {
 	wp_enqueue_style('alh-style',get_stylesheet_uri());
+    wp_enqueue_script('alh-js',get_stylesheet_directory_uri().'/alh-script.js', true);
 }
 
-function asl_footer_menu() {
-	register_nav_menu('footer-menu',__( 'ASL Footer Menu' ));
+function alh_menus() {
+	register_nav_menus(array(
+        'footer-menu' => _('ALH Footer Menu'),
+        'header-menu' => _('ALH Header Menu')
+    ));
 }
-add_action( 'init', 'asl_footer_menu' );
+add_action( 'init', 'alh_menus' );
 
-class Custom_ASL_Nav_Menu extends Walker_Nav_Menu {
+class Custom_ALH_Nav_Menu extends Walker_Nav_Menu {
 	function start_el( &$output, $item, $depth = 0, $args = null, $id = 0 ) {
         $output .= "<li>";
         if ( ! empty( $item->classes ) && in_array( 'menu-item-has-children', $item->classes ) ) {
@@ -26,4 +30,22 @@ class Custom_ASL_Nav_Menu extends Walker_Nav_Menu {
     function end_el( &$output, $item, $depth = 0, $args = null ) {
         $output .= "</li>";
     }
+}
+
+class ALH_Header_Nav_Menu extends Walker_Nav_Menu {
+
+    function start_el( &$output, $item, $depth = 0, $args = null, $id = 0 ) {
+        $output .= "<li>";
+        if ( ! empty( $item->classes ) && in_array( 'menu-item-has-children', $item->classes ) ) {
+            // Menu item has children, output a button with onclick attribute
+            $output .= "<button onclick='myFunction()'>" . $item->title . "</button>";
+        } else {
+            $output .= "<a href='" . $item->url . "'>" . $item->title . "</a>";
+        }
+    }
+
+    function end_el( &$output, $item, $depth = 0, $args = null ) {
+        $output .= "</li>";
+    }
+
 }
