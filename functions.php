@@ -3,8 +3,8 @@
 add_action('wp_enqueue_scripts', 'alh_enqueue_styles');
 
 function alh_enqueue_styles() {
-	wp_enqueue_style('alh-style',get_stylesheet_uri());
-    wp_enqueue_script('alh-js',get_stylesheet_directory_uri().'/alh-script.js', true);
+	wp_enqueue_style('alh-style', get_stylesheet_uri(), array(), wp_get_theme()->get('Version'));
+    wp_enqueue_script('alh-js', get_stylesheet_directory_uri().'/alh-script.js', array(), '1.1', true);
 }
 
 function alh_menus() {
@@ -38,7 +38,8 @@ class ALH_Header_Nav_Menu extends Walker_Nav_Menu {
         $output .= "<li>";
         if ( ! empty( $item->classes ) && in_array( 'menu-item-has-children', $item->classes ) ) {
             // Menu item has children, output a button with onclick attribute
-            $output .= "<button onclick='myFunction()'>" . $item->title . "</button>";
+            $output .= "<button onclick='dropdownBtn()'>" . $item->title . "</button>";
+            $output .= "<i class='fa-solid fa-caret-down'></i>";
         } else {
             $output .= "<a href='" . $item->url . "'>" . $item->title . "</a>";
         }
