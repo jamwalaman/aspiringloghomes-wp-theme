@@ -25,6 +25,9 @@
             'walker' => new ALH_Header_Nav_Menu()
         ));
         ?>
+		<!-- wp:list-item -->
+		<li class="mobileicon"><a href="javascript:void(0);" onClick="mobileBtn()"><i class="fa-solid fa-bars"></i></a></li>
+		<!-- /wp:list-item -->
         <!-- /wp:list -->
 
 	</div>

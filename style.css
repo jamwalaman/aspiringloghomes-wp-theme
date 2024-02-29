@@ -3,7 +3,7 @@ Theme Name: Aspiring Log Homes
 Template: twentytwentyfour
 Author: Aman Jamwal
 Description: WordPress theme for Aspiring Log Homes
-Version: 1.3.2
+Version: 1.4.15
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: aspiringloghomes
@@ -17,7 +17,44 @@ a, button {
     transition: 0.4s;
 }
 
-#menu-header-nav li {
+.menu.mob-link {
+    flex-basis: 100%;
+}
+
+.menu.mob-link li {
+    display: block;
+    font-size: 1.2rem;
+    padding: 0.5rem 0;
+}
+
+.menu.mob-link li button {
+    font-size: 1.2rem;
+    padding: 0;
+}
+
+.menu.mob-link .show li {
+    padding-left: 1rem;
+}
+
+.mob-link .fa-solid.fa-caret-down {
+    padding-left: 0.5rem;
+}
+
+.menu li {
+    display: none;
+}
+
+.mobileicon {
+    position: absolute;
+    top: 10%;
+    right: 60px;
+}
+
+.mobileicon .fa-solid {
+    font-size: 1.8rem;
+}
+
+#menu-header-nav li, .mobileicon {
     list-style-type: none;
     font-weight: bold;
 }
@@ -35,18 +72,14 @@ a, button {
     border: none;
     font-weight: bold;
     font-family: var(--wp--preset--font-family--primary);
-    font-size: var(--wp--preset--font-size--medium);
     cursor: pointer;
 }
 
 #menu-header-nav li ul {
     display: none;
     padding: 0;
-    position: absolute;
     background: #fff;
     background-color: var(--alh-purple);
-    border-radius: 15px;
-    z-index: 2;
 }
 #menu-header-nav .show li a {
     color: #fff;
@@ -74,6 +107,9 @@ a, button {
 
 @media (min-width: 768px) {
 
+    .menu li {
+        display: block;
+    }
     #menu-header-nav .show li {
         padding: 0.9rem;
     }
@@ -82,6 +118,23 @@ a, button {
     }
     #menu-header-nav li {
         padding: 0 0.7rem;
+        position: relative;
+    }
+    #menu-header-nav li ul {
+        padding: 0;
+        position: absolute;
+        border-radius: 15px;
+        z-index: 2;
+    }
+    #menu-header-nav li ul {
+        left: 0;
+        width: 150px;
+    }
+    .mobileicon {
+        display: none;
+    }
+    #menu-header-nav li button {
+        font-size: var(--wp--preset--font-size--medium);
     }
 
 }
