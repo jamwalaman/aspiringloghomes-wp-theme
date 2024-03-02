@@ -12,10 +12,10 @@ window.onclick = function(e) {
 }
 
 function mobileBtn() {
-  var x = document.querySelector(".menu");
-  if (x.className === "menu") {
+  var x = document.querySelector(".main-menu");
+  if (x.className === "main-menu") {
     x.className += " mob-link";
   } else {
-    x.className = "menu";
+    x.className = "main-menu";
   }
 }

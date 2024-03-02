@@ -22,7 +22,7 @@
     wp_nav_menu(array(
         'theme_location' => 'footer-menu',
         'container' => false,
-        'walker' => new Custom_ALH_Nav_Menu()
+        'walker' => new ALH_Footer_Nav_Menu()
     ));
     ?>
     <!-- /wp:list -->
