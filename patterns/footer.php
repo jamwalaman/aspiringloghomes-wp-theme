@@ -6,8 +6,8 @@
  */
 ?>
 
-<!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|20","bottom":"var:preset|spacing|20"},"margin":{"top":"var:preset|spacing|50"}},"elements":{"link":{"color":{"text":"var:preset|color|white"}}}},"backgroundColor":"asl-purple","textColor":"white","layout":{"type":"constrained","justifyContent":"left"}} -->
-<div class="wp-block-group has-white-color has-asl-purple-background-color has-text-color has-background has-link-color" style="margin-top:var(--wp--preset--spacing--50);padding-top:var(--wp--preset--spacing--20);padding-bottom:var(--wp--preset--spacing--20)"><!-- wp:group {"align":"wide","layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"center"}} -->
+<!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|20","bottom":"var:preset|spacing|20"},"margin":{"top":"var:preset|spacing|50"}},"elements":{"link":{"color":{"text":"var:preset|color|white"}}}},"backgroundColor":"alh-purple","textColor":"white","layout":{"type":"constrained","justifyContent":"left"}} -->
+<div class="wp-block-group has-white-color has-alh-purple-background-color has-text-color has-background has-link-color" style="margin-top:var(--wp--preset--spacing--50);padding-top:var(--wp--preset--spacing--20);padding-bottom:var(--wp--preset--spacing--20)"><!-- wp:group {"align":"wide","layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"center"}} -->
 <div class="wp-block-group alignwide"><!-- wp:columns {"verticalAlignment":"center","style":{"layout":{"selfStretch":"fill","flexSize":null}}} -->
 <div class="wp-block-columns are-vertically-aligned-center"><!-- wp:column {"verticalAlignment":"center","width":"20%"} -->
 <div class="wp-block-column is-vertically-aligned-center" style="flex-basis:20%"><!-- wp:paragraph {"fontSize":"medium"} -->
@@ -16,7 +16,7 @@
 <!-- /wp:column -->
 
 <!-- wp:column {"verticalAlignment":"center","width":"60%","className":"alhnav"} -->
-<div class="wp-block-column is-vertically-aligned-center" style="flex-basis:60%">
+<div class="wp-block-column is-vertically-aligned-center alhnav" style="flex-basis:60%">
     <!-- wp:list -->
     <?php
     wp_nav_menu(array(

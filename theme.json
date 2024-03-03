@@ -3,14 +3,14 @@
     "version": 2,
     "customTemplates": [
         {
-            "name": "asl-home",
+            "name": "alh-home",
             "postTypes": ["page"],
-            "title": "ASL Home Page"
+            "title": "ALH Home Page"
         },
         {
-            "name": "asl-simple-page",
+            "name": "alh-simple-page",
             "postTypes": ["page"],
-            "title": "ASL Simple"
+            "title": "ALH Simple"
         },
         {
             "name": "alh-banner",
@@ -23,8 +23,8 @@
             "palette": [
                 {
                     "color": "#545DA9",
-                    "name": "ASL Purple",
-                    "slug": "asl-purple"
+                    "name": "ALH Purple",
+                    "slug": "alh-purple"
                 },
                 {
                     "color": "#ffffff",
