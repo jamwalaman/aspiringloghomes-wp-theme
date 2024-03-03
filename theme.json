@@ -11,6 +11,11 @@
             "name": "asl-simple-page",
             "postTypes": ["page"],
             "title": "ASL Simple"
+        },
+        {
+            "name": "alh-banner",
+            "postTypes": ["page"],
+            "title": "ALH Banner Page"
         }
     ],
     "settings": {
