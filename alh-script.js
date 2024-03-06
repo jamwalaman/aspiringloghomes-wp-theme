@@ -11,6 +11,7 @@ window.onclick = function(e) {
   }
 }
 
+// Hamburger icon for mobile
 function mobileBtn() {
   var x = document.querySelector(".main-menu");
   if (x.className === "main-menu") {

@@ -3,7 +3,7 @@ Theme Name: Aspiring Log Homes
 Template: twentytwentyfour
 Author: Aman Jamwal
 Description: WordPress theme for Aspiring Log Homes
-Version: 1.4.16
+Version: 1.5.2
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: aspiringloghomes
@@ -21,8 +21,18 @@ a, button {
     transition: 0.4s;
 }
 
+.wp-block-group:has(.main-menu) {
+    position: relative;
+}
+
 .main-menu.mob-link {
     flex-basis: 100%;
+    position: absolute;
+    top: 164px;
+    z-index: 2;
+    background-color: #fff;
+    width: 100%;
+    padding-right: 1rem;
 }
 
 .main-menu li {
@@ -50,8 +60,8 @@ a, button {
 
 .mobileicon {
     position: absolute;
-    top: 10%;
-    right: 60px;
+    top: 20%;
+    right: 0;
 }
 
 .mobileicon .fa-solid {
