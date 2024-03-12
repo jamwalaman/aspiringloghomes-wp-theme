@@ -4,7 +4,7 @@ add_action('wp_enqueue_scripts', 'alh_enqueue_styles');
 
 function alh_enqueue_styles() {
 	wp_enqueue_style('alh-style', get_stylesheet_uri(), array(), wp_get_theme()->get('Version'));
-    wp_enqueue_script('alh-js', get_stylesheet_directory_uri().'/alh-script.js', array(), '1.1.4', true);
+    wp_enqueue_script('alh-js', get_stylesheet_directory_uri().'/alh-script.js', array(), '1.2.1', true);
 }
 
 function alh_menus() {

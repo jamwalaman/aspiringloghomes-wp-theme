@@ -13,10 +13,20 @@ window.onclick = function(e) {
 
 // Hamburger icon for mobile
 function mobileBtn() {
-  var x = document.querySelector(".main-menu");
+  const x = document.querySelector(".main-menu");
   if (x.className === "main-menu") {
     x.className += " mob-link";
   } else {
     x.className = "main-menu";
   }
 }
+
+// Toggle 'scrolled' class when user scrolls down
+window.addEventListener('scroll', function() {
+  const header = document.querySelector('.alh-header');
+  if (window.scrollY > 0) {
+    header.classList.add('scrolled');
+  } else {
+    header.classList.remove('scrolled');
+  }
+});
