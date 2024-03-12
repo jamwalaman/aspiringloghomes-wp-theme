@@ -16,7 +16,7 @@
 <!-- wp:image {"id":392,"width":"40px","sizeSlug":"medium","linkDestination":"custom","className":"fb-footer"} -->
 <figure class="wp-block-image size-medium is-resized fb-footer">
     <a href="https://www.facebook.com/AspiringLogHomes" target="_blank" rel="noreferrer noopener">
-        <img src="http://localhost/wp-alh/wp-content/uploads/2024/03/Facebook_Logo_Secondary-300x300.png" alt="fb-logo" class="wp-image-392" style="width:40px"/>
+        <img src="<?php echo esc_url(get_stylesheet_directory_uri()); ?>/assets/images/facebook_logo.png" alt="fb-logo" class="wp-image-392" style="width:40px"/>
     </a>
 </figure>
 <!-- /wp:image --></div>
