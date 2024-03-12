@@ -12,7 +12,14 @@
 <div class="wp-block-columns are-vertically-aligned-center"><!-- wp:column {"verticalAlignment":"center","width":"20%"} -->
 <div class="wp-block-column is-vertically-aligned-center" style="flex-basis:20%"><!-- wp:paragraph {"fontSize":"medium"} -->
 <p class="has-medium-font-size">Aspiring Log Homes (ALH) Builds houses to the highest quality using the best quality trees from certified log plantations</p>
-<!-- /wp:paragraph --></div>
+<!-- /wp:paragraph -->
+<!-- wp:image {"id":392,"width":"40px","sizeSlug":"medium","linkDestination":"custom","className":"fb-footer"} -->
+<figure class="wp-block-image size-medium is-resized fb-footer">
+    <a href="https://www.facebook.com/AspiringLogHomes" target="_blank" rel="noreferrer noopener">
+        <img src="http://localhost/wp-alh/wp-content/uploads/2024/03/Facebook_Logo_Secondary-300x300.png" alt="fb-logo" class="wp-image-392" style="width:40px"/>
+    </a>
+</figure>
+<!-- /wp:image --></div>
 <!-- /wp:column -->
 
 <!-- wp:column {"verticalAlignment":"center","width":"60%","className":"alhnav"} -->
