@@ -3,7 +3,7 @@ Theme Name: Aspiring Log Homes
 Template: twentytwentyfour
 Author: Aman Jamwal
 Description: WordPress theme for Aspiring Log Homes
-Version: 1.7.8
+Version: 1.9.10
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: aspiringloghomes
@@ -22,7 +22,7 @@ a, button {
     transition: 0.4s;
 }
 
-.wp-block-group:has(.main-menu) {
+.alh-header .wp-block-group {
     position: relative;
 }
 
@@ -123,7 +123,7 @@ a, button {
 .page-template-alh-banner #banner-block {
     position: relative;
 }
-.page-template-alh-banner .wp-block-post-featured-image, #metaslider_container_403 .flexslider {
+.page-template-alh-banner .wp-block-post-featured-image {
     margin: 0;
     width: 100vw;
     left: 50%;
@@ -137,6 +137,10 @@ a, button {
     top: 50%;
     transform: translateY(-50%);
     color: #fff;
+}
+
+.page-template-alh-home :where(.wp-site-blocks) > *, .page-template-alh-banner :where(.wp-site-blocks) > * {
+    margin-block-start: 0
 }
 
 .forminator-field .forminator-label {
@@ -157,7 +161,7 @@ a, button {
     color: var(--invalid-red) !important;
 }
 
-#metaslider_container_403 .flex-control-nav {
+.home-slider ol.flex-control-nav.flex-control-paging {
     display: none;
 }
 
@@ -166,11 +170,38 @@ figure.fb-footer {
     justify-content: center;
 }
 
+.page-template-alh-simple-page :where(.wp-site-blocks) > * {
+    margin-block-start: 1rem;
+}
+
 @media (min-width: 768px) {
+
+    .alh-header {
+        position: fixed;
+        top: 0;
+        z-index: 3;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0);
+        transition: background-color 0.3s ease;
+    }
+
+    .scrolled {
+        background-color: #fff;
+    }
+
+    .page-template-alh-home .scrolled .logo-main, .page-template-alh-banner .scrolled .logo-main {
+        display: block;
+    }
+
+    .page-template-alh-home .logo-main, .page-template-alh-home .scrolled .logo-white,
+    .page-template-alh-banner .logo-main, .page-template-alh-banner .scrolled .logo-white {
+        display: none;
+    }
 
     .main-menu li {
         display: block;
     }
+
     #menu-header-nav .show li {
         padding: 0.7rem;
         line-height: 1.3rem;
@@ -198,6 +229,20 @@ figure.fb-footer {
     #menu-header-nav li button {
         font-size: var(--wp--preset--font-size--medium);
     }
+
+    .page-template-alh-home #menu-header-nav li, .page-template-alh-home #menu-header-nav li button,
+    .page-template-alh-banner #menu-header-nav li, .page-template-alh-banner #menu-header-nav li button {
+    color: #fff;
+    }
+    .page-template-alh-home .scrolled #menu-header-nav li, .page-template-alh-home .scrolled #menu-header-nav li button,
+    .page-template-alh-banner .scrolled #menu-header-nav li, .page-template-alh-banner .scrolled #menu-header-nav li button {
+    color: var(--alh-purple);
+    }
+
+    .page-template-alh-simple-page :where(.wp-site-blocks) > * {
+        margin-block-start: 8.1rem;
+    }
+
     figure.fb-footer {
         display: block;
     }
