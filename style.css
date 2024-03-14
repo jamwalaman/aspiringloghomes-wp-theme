@@ -3,11 +3,22 @@ Theme Name: Aspiring Log Homes
 Template: twentytwentyfour
 Author: Aman Jamwal
 Description: WordPress theme for Aspiring Log Homes
-Version: 1.9.26
+Version: 1.10.7
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: aspiringloghomes
 */
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@200..900&display=swap');
+
+body {
+    font-family: "Source Sans 3", sans-serif;
+    font-weight: 400;
+}
+
+body, html {
+    overflow-x: hidden;
+}
 
 :root {
     --alh-purple: #545DA9;
@@ -15,8 +26,9 @@ Text Domain: aspiringloghomes
     --invalid-red: #990000;
 }
 
-body, html {
-    overflow-x: hidden;
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+    font-family: "Source Sans 3", sans-serif;
 }
 
 a, button {
@@ -179,7 +191,7 @@ a.wp-block-button__link:hover.has-alh-purple-background-color:hover {
     background-color: var(--light-purple) !important;
 }
 
-.wp-block-button .wp-block-button__link:where(.has-border-color):hover {
+.alh-btn-hover .wp-block-button__link:hover {
     background-color: var(--alh-purple);
     color: #fff;
 }

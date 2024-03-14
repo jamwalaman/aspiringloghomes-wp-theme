@@ -40,48 +40,6 @@
         },
         "layout": {
             "contentSize": "920px"
-        },
-        "typography": {
-            "fontFamilies": [
-                {
-                    "fontFace": [
-                        {
-                            "fontFamily": "Source Sans Pro",
-                            "fontWeight": "400",
-                            "src": ["file: ./assets/fonts/source-sans-pro/SourceSansPro-Regular.woff2"]
-                        }
-                    ],
-                    "fontFamily": "Source Sans Pro",
-                    "name": "Source Sans Pro",
-                    "slug": "primary"
-                }
-            ]
-        }
-    },
-    "styles": {
-        "blocks": {
-            "core/navigation": {
-                "elements": {
-                    "link": {
-                        ":hover": {
-                            "typography": {
-                                "textDecoration": "none"
-                            }
-                        }
-                    }
-                }
-            }
-        },
-        "elements": {
-            "heading": {
-                "typography": {
-                    "fontFamily": "var(--wp--preset--font-family--primary)",
-                    "fontWeight": "700"
-                }
-            }
-        },
-        "typography": {
-            "fontFamily": "var(--wp--preset--font-family--primary)"
         }
     }
 }
