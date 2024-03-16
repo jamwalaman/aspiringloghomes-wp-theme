@@ -3,7 +3,7 @@ Theme Name: Aspiring Log Homes
 Template: twentytwentyfour
 Author: Aman Jamwal
 Description: WordPress theme for Aspiring Log Homes
-Version: 1.10.7
+Version: 1.11.7
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: aspiringloghomes
@@ -183,10 +183,6 @@ figure.fb-footer {
     justify-content: center;
 }
 
-.page-template-alh-simple-page :where(.wp-site-blocks) > * {
-    margin-block-start: 1rem;
-}
-
 a.wp-block-button__link:hover.has-alh-purple-background-color:hover {
     background-color: var(--light-purple) !important;
 }
@@ -202,6 +198,10 @@ a.wp-block-button__link:hover.has-alh-purple-background-color:hover {
 }
 .cad-plans-wrapper h2 {
     display: none;
+}
+
+.alh-testimonial-wrapper {
+    padding: min(1.5rem, 4vw) !important;
 }
 
 @media (min-width: 768px) {
@@ -270,15 +270,25 @@ a.wp-block-button__link:hover.has-alh-purple-background-color:hover {
     }
 
     .page-template-alh-simple-page :where(.wp-site-blocks) > * {
-        margin-block-start: 8.1rem;
+        margin-block-start: 12rem;
     }
 
     .alh-gallery-row .wp-block-columns {
         width: 100%;
     }
 
+    .alh-testimonial-wrapper {
+        padding: min(1.5rem, 2vw) !important;
+    }
+
     figure.fb-footer {
         display: block;
     }
 
+}
+
+@media (min-width: 992px) {
+    .page-template-alh-simple-page :where(.wp-site-blocks) > * {
+        margin-block-start: 9rem;
+    }    
 }
