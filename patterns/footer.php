@@ -37,8 +37,8 @@
 <!-- /wp:column -->
 
 <!-- wp:column {"verticalAlignment":"center","width":"20%"} -->
-<div class="wp-block-column is-vertically-aligned-center" style="flex-basis:20%"><!-- wp:image {"align":"center","id":69,"width":"120px","sizeSlug":"medium","linkDestination":"none"} -->
-<figure class="wp-block-image aligncenter size-medium is-resized"><img src="<?php echo esc_url(get_stylesheet_directory_uri()); ?>/assets/images/asl-logo-white.png" alt="asl logo white" class="wp-image-69" style="width:120px"/></figure>
+<div class="wp-block-column is-vertically-aligned-center" style="flex-basis:20%"><!-- wp:image {"align":"center","id":69,"width":"90px","sizeSlug":"medium","linkDestination":"none"} -->
+<figure class="wp-block-image aligncenter size-medium is-resized"><img src="<?php echo esc_url(get_stylesheet_directory_uri()); ?>/assets/images/alh-logo-white.svg" alt="asl logo white" class="wp-image-69" style="width:90px"/></figure>
 <!-- /wp:image --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns --></div>
