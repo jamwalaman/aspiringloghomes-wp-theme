@@ -3,7 +3,7 @@ Theme Name: Aspiring Log Homes
 Template: twentytwentyfour
 Author: Aman Jamwal
 Description: WordPress theme for Aspiring Log Homes
-Version: 1.14.6
+Version: 1.16.3
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: aspiringloghomes
@@ -35,6 +35,10 @@ a, button {
     transition: 0.4s;
 }
 
+:where(.wp-site-blocks *:focus) {
+    outline-style: none;
+}
+
 .alh-header .wp-block-group {
     position: relative;
 }
@@ -43,13 +47,19 @@ a, button {
     flex-basis: 100%;
     position: absolute;
     top: 125px;
+    left: -9.5%;
     z-index: 2;
-    background-color: #fff;
-    width: 100%;
+    background-color: var(--alh-purple);
+    width: 100vw;
     padding-right: 1rem;
+    padding-left: 9.5%;
 }
 
-.main-menu li {
+.alh-header:has(.mob-link) {
+    background-color: var(--alh-purple);
+}
+
+.main-menu li, .hide-logo {
     display: none;
 }
 
@@ -57,11 +67,13 @@ a, button {
     display: block;
     font-size: 1.2rem;
     padding: 0.5rem 0;
+    color: #fff;
 }
 
 .main-menu.mob-link li button {
     font-size: 1.2rem;
     padding: 0;
+    color: #fff;
 }
 
 .main-menu.mob-link .show li {
@@ -81,6 +93,9 @@ a, button {
 .mobileicon .fa-solid {
     font-size: 1.8rem;
 }
+.white-icon .fa-solid {
+    color: #fff;
+}
 
 #menu-header-nav li, .mobileicon {
     list-style-type: none;
@@ -91,7 +106,7 @@ a, button {
     text-decoration: none;
 }
 
-#menu-header-nav li a:hover, #menu-header-nav li button:hover {
+#menu-header-nav li a:hover {
     color: var(--alh-purple);
 }
 
@@ -107,7 +122,8 @@ a, button {
     display: none;
     padding: 0;
     background: #fff;
-    background-color: var(--alh-purple);
+    background-color: var(--light-purple);
+    margin-right: 6%;
 }
 #menu-header-nav .show li a {
     color: #fff;
@@ -225,6 +241,10 @@ a.wp-block-button__link:hover.has-alh-purple-background-color:hover {
 
     .scrolled {
         background-color: #fff;
+    }
+
+    #menu-header-nav li button:hover {
+        color: var(--alh-purple) !important;
     }
 
     .page-template-alh-home .scrolled .logo-main, .page-template-alh-banner .scrolled .logo-main {

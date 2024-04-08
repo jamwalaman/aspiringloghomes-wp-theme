@@ -14,10 +14,16 @@ window.onclick = function(e) {
 // Hamburger icon for mobile
 function mobileBtn() {
   const x = document.querySelector(".main-menu");
+  const logo = document.querySelector(".logo-main");
+  const mob = document.querySelector(".mobileicon");
   if (x.className === "main-menu") {
     x.className += " mob-link";
+    logo.className += " hide-logo";
+    mob.className += " white-icon"
   } else {
     x.className = "main-menu";
+    logo.className = "wp-block-image size-medium is-resized logo-main";
+    mob.className = "mobileicon";
   }
 }
 
