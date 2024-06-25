@@ -34,7 +34,7 @@
 <!-- /wp:image -->
 
 <!-- wp:paragraph {"align":"center"} -->
-<p class="has-text-align-center"><strong>Phone: 021 029 64763<br>Email: <a href="mailto:mat.rusher@aspiringloghomes.co.nz">mat.rusher@aspiringloghomes.co.nz</a></strong></p>
+<p class="has-text-align-center"><strong>Get in touch<br>Phone: 021 029 64763<br>Email: <a href="mailto:mat.rusher@aspiringloghomes.co.nz">mat.rusher@aspiringloghomes.co.nz</a></strong></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns --></div>
