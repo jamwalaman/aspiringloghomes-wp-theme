@@ -48,7 +48,18 @@
 <hr class="wp-block-separator alignwide has-alpha-channel-opacity is-style-wide"/>
 <!-- /wp:separator -->
 
-<!-- wp:paragraph -->
-<p>© <?php echo date('Y') ?> | Aspiring Log Homes</p>
+<!-- wp:columns {"align":"wide"} -->
+<div class="wp-block-columns alignwide"><!-- wp:column -->
+<div class="wp-block-column"><!-- wp:paragraph -->
+<p>© 2025 | Aspiring Log Homes</p>
 <!-- /wp:paragraph --></div>
+<!-- /wp:column -->
+
+<!-- wp:column {"className":"website-credit"} -->
+<div class="wp-block-column website-credit"><!-- wp:paragraph -->
+<p><span style="text-decoration: underline;"><a target="_blank" href="https://ajdesign.netlify.app/">Website by Aman Jamwal</a></span></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:column --></div>
+<!-- /wp:columns --></div>
+ 
 <!-- /wp:group -->
